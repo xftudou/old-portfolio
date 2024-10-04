@@ -79,7 +79,7 @@ main {
     margin: 0 auto;
 }
 
-/* Home page*/
+/* Home page */
 body.content {
     text-align: center;
 }
@@ -115,4 +115,34 @@ body.content {
 
 .main-buttons button:hover {
     background-color: #666;
+}
+
+/* About page */
+.about-page main {
+    padding: 2rem;
+}
+
+.about-page .content {
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.code-block {
+    background-color: var(--code-bg-color);
+    border-radius: 5px;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+pre {
+    margin: 0;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #b9bbbe;
 }
