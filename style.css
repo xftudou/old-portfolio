@@ -79,6 +79,13 @@ main {
     margin: 0 auto;
 }
 
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: var(--accent-color);
+}
+
 /* Home page */
 body.content {
     text-align: center;
@@ -117,25 +124,22 @@ body.content {
     background-color: #666;
 }
 
-/* About page */
-.about-page main {
-    padding: 2rem;
-}
-
-.about-page .content {
-    text-align: left;
-}
-
 h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
+
+.about {
+    padding: 1rem;
+}
+
 
 .code-block {
     background-color: var(--code-bg-color);
     border-radius: 5px;
     padding: 1rem;
     overflow-x: auto;
+    text-align: left;
 }
 
 pre {
