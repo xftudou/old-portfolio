@@ -1,3 +1,3 @@
-**Personal Website**
+**Alina's Personal Website**
 
-[xftudou.github.io](xftudou.github.io)
+[xftudou.github.io](http://xftudou.github.io)
