@@ -10,7 +10,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
-    padding: 0;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -72,6 +72,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 60px;
 }
 
 .content {
@@ -83,7 +84,8 @@ footer {
     text-align: center;
     padding: 1rem;
     font-size: 0.8rem;
-    color: var(--accent-color);
+    color: #9a9a9a;
+    padding-top: 2rem;
 }
 
 /* Home page */
@@ -124,15 +126,16 @@ body.content {
     background-color: #666;
 }
 
+/* about me section*/
+
 h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
 
 .about {
-    padding: 1rem;
+    padding: 3rem;
 }
-
 
 .code-block {
     background-color: var(--code-bg-color);
@@ -140,6 +143,11 @@ h1 {
     padding: 1rem;
     overflow-x: auto;
     text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+.code-block:hover {
+    transform: scale(1.05);
 }
 
 pre {
@@ -149,4 +157,70 @@ pre {
 code {
     font-family: 'Courier New', Courier, monospace;
     color: #b9bbbe;
+}
+
+/* experience section */
+.timeline {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--accent-color);
+    left: calc(50% - 1px);
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+    text-align: left;
+}
+
+.timeline-dot {
+    height: 21px;
+    width: 21px;
+    background-color: var(--text-color);
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-date {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text-color);
+    margin: 6px 0 15px;
+}
+
+.timeline-content {
+    background-color: var(--code-bg-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.timeline-content:hover {
+    transform: scale(1.05);
 }
