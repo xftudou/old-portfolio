@@ -7,9 +7,10 @@
     <title>Alina's Contacts</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.cdnfonts.com/css/code-new-roman" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/88dba5bfa9.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="contacts">
     <header>
         <nav>
             <div class="logo"><a href="index.html">Alina's Cyberhome</a></div>
@@ -22,7 +23,42 @@
     </header>
 
     <main>
+        <div class="content">
+            <h1>Contact Me</h1>
+            <div class="contact-links">
+                <div class="social-item">
+                    <a aria-label="icon" href="https://github.com/xftudou"><i class="fab fa-github"></i></a>
+                    <p>GitHub: https://github.com/xftudou</p>
+                </div>
+                <div class="social-item">
+                    <a aria-label="icon" href="https://www.linkedin.com/in/yuhan-yang925/"><i
+                            class=" fab fa-linkedin"></i></a>
+                    <p>LinkedIn: https://www.linkedin.com/in/yuhan-yang925/</p>
+                </div>
+                <div class="social-item">
+                    <a aria-label="icon" href="mailto:yang.yuhan3@northeastern.edu"><i class="fas fa-envelope"></i></a>
+                    <p>School: yang.yuhan3@northeastern.edu</p>
+                </div>
+                <div class="social-item">
+                    <a aria-label="icon" href="mailto:yangyuhan824@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <p>Personal: yangyuhan824@gmail.com</p>
+                </div>
+            </div>
+            <form action="https://formspree.io/f/xpwzalqr" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name (Required)" required>
 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email (Required)" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your Message (Required)"
+                    required></textarea>
+
+                <input type="reset" value="Clear">
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </main>
 
 
