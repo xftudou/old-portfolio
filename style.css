@@ -351,6 +351,14 @@ body.contacts main .content h1 {
     transition: 0.3s ease;
 }
 
+.contact-links {
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
 .contact-links a:hover {
     transform: scale(1.1)translateY(-10px);
 }
@@ -399,5 +407,6 @@ input[type="reset"] {
     font-size: medium;
     border-radius: 10px;
     font-family: 'Code New Roman', sans-serif;
+    border: 2px solid var(--accent-color);
     cursor: pointer;
 }
