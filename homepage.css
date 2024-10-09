@@ -8,6 +8,10 @@ main {
     padding-top: 7rem;
 }
 
+h1 {
+    margin-top: -2rem;
+}
+
 body.content {
     text-align: center;
 }
@@ -43,14 +47,14 @@ body.content {
 .code-block {
     background-color: var(--code-bg-color);
     border-radius: 5px;
-    padding: 1rem;
+    padding: 15px 15px 0;
     text-align: left;
     transition: 0.3s ease-in-out;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .code-block {
-        width: 90vw;
+        width: 300px;
         overflow: auto;
     }
 }
@@ -75,7 +79,7 @@ code {
 
 .timeline {
     max-width: 800px;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
     padding: 20px 0;
 }
@@ -99,12 +103,14 @@ code {
 }
 
 .timeline-item:nth-child(odd) {
-    left: 0;
+    left: 50%;
+    transform: translateX(-100%);
     text-align: right;
 }
 
 .timeline-item:nth-child(even) {
     left: 50%;
+    transform: translateX(0);
     text-align: left;
 }
 
@@ -118,7 +124,7 @@ code {
 }
 
 .timeline-item:nth-child(odd) .timeline-dot {
-    right: -25.5px;
+    right: -12.5px;
 }
 
 .timeline-item:nth-child(even) .timeline-dot {
@@ -134,13 +140,13 @@ code {
 .timeline-content {
     background-color: var(--code-bg-color);
     border-radius: 10px;
-    padding: 5px;
+    padding: 15px 15px;
     margin-top: 5px;
     transition: 0.3s ease-in-out;
 }
 
-.timeline-content h3 {
-    margin-top: 0;
+.timeline-content h4 {
+    margin: 0;
 }
 
 .timeline-content p {
