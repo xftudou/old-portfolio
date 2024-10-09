@@ -7,10 +7,6 @@ body.contacts main .content {
     text-align: center;
 }
 
-body.contacts main .content h1 {
-    margin-top: -1rem;
-}
-
 .contact-links a {
     color: var(--text-color);
     transition: 0.3s ease;
