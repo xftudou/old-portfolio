@@ -1,0 +1,41 @@
+/* Blog post page */
+.post-container {
+    padding-top: 5rem;
+    text-align: left;
+}
+
+nav[aria-label="blog-post-nav"] {
+    font-size: 0.9rem;
+    padding-left: 2rem;
+    color: var(--accent-color);
+    text-align: left;
+    display: inline-block;
+}
+
+nav[aria-label="blog-post-nav"] a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav[aria-label="blog-post-nav"] a:hover {
+    color: var(--accent-color);
+}
+
+nav[aria-label="blog-post-nav"] a.active {
+    border-bottom: 2px solid var(--text-color);
+}
+
+.blog-post-header {
+    padding-left: 2rem;
+    text-align: center;
+}
+
+body.blog-post-1 main.content {
+    text-align: left;
+    max-width: 800px;
+    line-height: 1.6;
+    color: var(--text-color);
+    padding: 2rem;
+    margin-top: 1rem;
+}
